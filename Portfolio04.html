@@ -1,0 +1,397 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Model Portfolio &amp; Appointments
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+ </head>
+ <body class="min-h-screen flex flex-col">
+  <header class="bg-white text-gray-900 shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <h1 class="text-3xl font-bold tracking-wide">
+     Elena Voss
+    </h1>
+    <nav class="space-x-8 hidden md:flex text-gray-700 font-semibold">
+     <a class="hover:text-amber-600 transition-colors" href="#shots">
+      Shots
+     </a>
+     <a class="hover:text-amber-600 transition-colors" href="#info">
+      Info
+     </a>
+     <a class="hover:text-amber-600 transition-colors" href="#appointments">
+      Appointments
+     </a>
+     <a class="hover:text-amber-600 transition-colors" href="#booking">
+      Booking
+     </a>
+    </nav>
+    <button aria-label="Toggle menu" class="md:hidden text-gray-700 focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <nav class="bg-white text-gray-900 px-6 py-4 space-y-4 hidden md:hidden" id="mobile-menu">
+    <a class="block font-semibold hover:text-amber-600 transition-colors" href="#shots">
+     Shots
+    </a>
+    <a class="block font-semibold hover:text-amber-600 transition-colors" href="#info">
+     Info
+    </a>
+    <a class="block font-semibold hover:text-amber-600 transition-colors" href="#appointments">
+     Appointments
+    </a>
+    <a class="block font-semibold hover:text-amber-600 transition-colors" href="#booking">
+     Booking
+    </a>
+   </nav>
+  </header>
+  <main class="flex-grow max-w-7xl mx-auto px-6 py-10">
+   <!-- Hero Section with Model Portrait and Name -->
+   <section class="flex flex-col md:flex-row items-center md:items-start gap-10 mb-20">
+    <div class="flex-shrink-0 w-full md:w-1/3 rounded-lg overflow-hidden shadow-lg border border-gray-700">
+     <img alt="Portrait of Elena Voss, a professional model, posing in studio lighting with a confident expression, wearing a dark elegant outfit" class="w-full h-auto object-cover" height="800" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4c75cc6a-a3e2-4992-e65a-86ef9641172b.jpg" width="600"/>
+    </div>
+    <div class="md:w-2/3 text-white">
+     <h2 class="text-5xl font-playfair mb-4 leading-tight">
+      Elena Voss
+     </h2>
+     <p class="text-lg max-w-xl leading-relaxed text-gray-300">
+      International fashion model with over 8 years of experience in editorial, runway, and commercial work. Known for her striking presence, versatility, and professionalism. Elena has worked with top designers and photographers worldwide.
+     </p>
+     <div class="mt-8 flex flex-wrap gap-6 text-gray-400">
+      <div class="flex items-center space-x-3">
+       <i class="fas fa-birthday-cake text-amber-600 text-xl">
+       </i>
+       <span>
+        Age: 27
+       </span>
+      </div>
+      <div class="flex items-center space-x-3">
+       <i class="fas fa-map-marker-alt text-amber-600 text-xl">
+       </i>
+       <span>
+        Based in New York, USA
+       </span>
+      </div>
+      <div class="flex items-center space-x-3">
+       <i class="fas fa-arrows-alt-v text-amber-600 text-xl">
+       </i>
+       <span>
+        Height: 178 cm (5'10")
+       </span>
+      </div>
+      <div class="flex items-center space-x-3">
+       <i class="fas fa-palette text-amber-600 text-xl">
+       </i>
+       <span>
+        Hair: Dark Brown
+       </span>
+      </div>
+      <div class="flex items-center space-x-3">
+       <i class="fas fa-eye text-amber-600 text-xl">
+       </i>
+       <span>
+        Eyes: Hazel
+       </span>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Shots Gallery -->
+   <section class="mb-20" id="shots">
+    <h2 class="text-4xl font-playfair mb-10 border-b border-amber-600 pb-2 max-w-max">
+     Portfolio Shots
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+     <div class="rounded-lg overflow-hidden shadow-lg border border-gray-700 group cursor-pointer relative">
+      <img alt="Editorial shot of Elena Voss wearing a high-fashion outfit with dramatic lighting and a moody background" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" height="800" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c2d1599c-95b8-4d19-b271-27b6cba73d67.jpg" width="600"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <h3 class="text-lg font-semibold text-amber-400">
+        High Fashion Editorial
+       </h3>
+       <p class="text-sm text-gray-300">
+        Shot by Marco Leone, 2023
+       </p>
+      </div>
+     </div>
+     <div class="rounded-lg overflow-hidden shadow-lg border border-gray-700 group cursor-pointer relative">
+      <img alt="Runway shot of Elena Voss walking on a catwalk wearing a black evening gown with confident stride" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" height="800" loading="lazy" src="https://storage.googleapis.com/a1aa/image/33939bed-e479-49e0-e2ab-40e0952bd6c2.jpg" width="600"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <h3 class="text-lg font-semibold text-amber-400">
+        Runway Elegance
+       </h3>
+       <p class="text-sm text-gray-300">
+        Paris Fashion Week, 2022
+       </p>
+      </div>
+     </div>
+     <div class="rounded-lg overflow-hidden shadow-lg border border-gray-700 group cursor-pointer relative">
+      <img alt="Commercial shot of Elena Voss smiling wearing a casual chic outfit outdoors with natural sunlight" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" height="800" loading="lazy" src="https://storage.googleapis.com/a1aa/image/998f264c-3237-412e-4acf-b5aa3c28b0f0.jpg" width="600"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <h3 class="text-lg font-semibold text-amber-400">
+        Casual Commercial
+       </h3>
+       <p class="text-sm text-gray-300">
+        Campaign for Urban Wear, 2023
+       </p>
+      </div>
+     </div>
+     <div class="rounded-lg overflow-hidden shadow-lg border border-gray-700 group cursor-pointer relative">
+      <img alt="Beauty close-up shot of Elena Voss with natural makeup and soft lighting highlighting her facial features" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" height="800" loading="lazy" src="https://storage.googleapis.com/a1aa/image/60a83d9c-59ce-43e1-26cc-296ece8fc34b.jpg" width="600"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <h3 class="text-lg font-semibold text-amber-400">
+        Natural Beauty
+       </h3>
+       <p class="text-sm text-gray-300">
+        Shot by Anna Kim, 2023
+       </p>
+      </div>
+     </div>
+     <div class="rounded-lg overflow-hidden shadow-lg border border-gray-700 group cursor-pointer relative">
+      <img alt="Avant-garde shot of Elena Voss wearing futuristic fashion with bold makeup and a dark studio background" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" height="800" loading="lazy" src="https://storage.googleapis.com/a1aa/image/dc18bd54-9b37-4bf2-2366-a53507417557.jpg" width="600"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <h3 class="text-lg font-semibold text-amber-400">
+        Avant-garde Fashion
+       </h3>
+       <p class="text-sm text-gray-300">
+        Editorial for Vogue, 2023
+       </p>
+      </div>
+     </div>
+     <div class="rounded-lg overflow-hidden shadow-lg border border-gray-700 group cursor-pointer relative">
+      <img alt="Black and white artistic shot of Elena Voss posing with dramatic shadows and high contrast lighting" class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105" height="800" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ba2d0d5c-a898-46de-36f7-1d35f912b567.jpg" width="600"/>
+      <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+       <h3 class="text-lg font-semibold text-amber-400">
+        Monochrome Drama
+       </h3>
+       <p class="text-sm text-gray-300">
+        Artistic shoot by Liam Chen, 2022
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Information Section -->
+   <section class="mb-20 max-w-4xl mx-auto" id="info">
+    <h2 class="text-4xl font-playfair mb-10 border-b border-amber-600 pb-2 max-w-max mx-auto">
+     About Elena
+    </h2>
+    <div class="space-y-8 text-gray-300 text-lg leading-relaxed">
+     <p>
+      Elena Voss is a seasoned model with a passion for storytelling through fashion. Her ability to adapt to diverse styles and moods has made her a favorite among photographers and designers alike. She combines professionalism with a warm personality, making every shoot a collaborative and inspiring experience.
+     </p>
+     <p>
+      Beyond modeling, Elena is an advocate for sustainable fashion and often participates in campaigns promoting eco-friendly brands. She believes in using her platform to inspire positive change in the industry.
+     </p>
+     <p>
+      When not in front of the camera, Elena enjoys painting, yoga, and exploring new cultures through travel. Her diverse interests enrich her creative expression and bring depth to her work.
+     </p>
+    </div>
+   </section>
+   <!-- Appointments Section -->
+   <section class="mb-20 max-w-5xl mx-auto" id="appointments">
+    <h2 class="text-4xl font-playfair mb-10 border-b border-amber-600 pb-2 max-w-max mx-auto">
+     Upcoming Appointments
+    </h2>
+    <div class="space-y-6">
+     <article class="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-gray-900 rounded-lg p-6 shadow-lg border border-gray-700">
+      <div>
+       <h3 class="text-2xl font-semibold text-amber-400 mb-1">
+        Fashion Week Runway Show
+       </h3>
+       <p class="text-gray-400">
+        New York City, USA
+       </p>
+       <p class="text-gray-400">
+        Designer: Alexander Grey
+       </p>
+      </div>
+      <time class="mt-4 sm:mt-0 text-gray-300 font-mono text-lg bg-amber-600 rounded px-4 py-2" datetime="2024-07-15T18:00">
+       July 15, 2024 - 6:00 PM
+      </time>
+     </article>
+     <article class="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-gray-900 rounded-lg p-6 shadow-lg border border-gray-700">
+      <div>
+       <h3 class="text-2xl font-semibold text-amber-400 mb-1">
+        Editorial Photoshoot
+       </h3>
+       <p class="text-gray-400">
+        Los Angeles, USA
+       </p>
+       <p class="text-gray-400">
+        Photographer: Sofia Martinez
+       </p>
+      </div>
+      <time class="mt-4 sm:mt-0 text-gray-300 font-mono text-lg bg-amber-600 rounded px-4 py-2" datetime="2024-08-02T10:00">
+       August 2, 2024 - 10:00 AM
+      </time>
+     </article>
+     <article class="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-gray-900 rounded-lg p-6 shadow-lg border border-gray-700">
+      <div>
+       <h3 class="text-2xl font-semibold text-amber-400 mb-1">
+        Commercial Campaign Shoot
+       </h3>
+       <p class="text-gray-400">
+        Miami, USA
+       </p>
+       <p class="text-gray-400">
+        Brand: Urban Luxe
+       </p>
+      </div>
+      <time class="mt-4 sm:mt-0 text-gray-300 font-mono text-lg bg-amber-600 rounded px-4 py-2" datetime="2024-09-10T14:00">
+       September 10, 2024 - 2:00 PM
+      </time>
+     </article>
+     <article class="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-gray-900 rounded-lg p-6 shadow-lg border border-gray-700">
+      <div>
+       <h3 class="text-2xl font-semibold text-amber-400 mb-1">
+        Sustainable Fashion Panel
+       </h3>
+       <p class="text-gray-400">
+        Virtual Event
+       </p>
+       <p class="text-gray-400">
+        Speaker &amp; Panelist
+       </p>
+      </div>
+      <time class="mt-4 sm:mt-0 text-gray-300 font-mono text-lg bg-amber-600 rounded px-4 py-2" datetime="2024-10-05T16:00">
+       October 5, 2024 - 4:00 PM
+      </time>
+     </article>
+     <article class="flex flex-col sm:flex-row justify-between items-start sm:items-center bg-gray-900 rounded-lg p-6 shadow-lg border border-gray-700">
+      <div>
+       <h3 class="text-2xl font-semibold text-amber-400 mb-1">
+        Luxury Brand Lookbook Shoot
+       </h3>
+       <p class="text-gray-400">
+        Milan, Italy
+       </p>
+       <p class="text-gray-400">
+        Brand: La Belle Époque
+       </p>
+      </div>
+      <time class="mt-4 sm:mt-0 text-gray-300 font-mono text-lg bg-amber-600 rounded px-4 py-2" datetime="2024-11-20T09:00">
+       November 20, 2024 - 9:00 AM
+      </time>
+     </article>
+    </div>
+   </section>
+   <!-- Booking Section -->
+   <section class="mb-20 max-w-4xl mx-auto" id="booking">
+    <h2 class="text-4xl font-playfair mb-10 border-b border-amber-600 pb-2 max-w-max mx-auto">
+     Book Elena
+    </h2>
+    <form class="bg-gray-900 rounded-lg p-8 shadow-lg border border-gray-700" action="#" method="POST" novalidate>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+      <div class="flex flex-col">
+       <label class="mb-2 text-gray-300 font-semibold" for="fullName">
+        Full Name
+       </label>
+       <input class="rounded-md bg-gray-800 border border-gray-600 text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-600" id="fullName" name="fullName" placeholder="Your full name" required="" type="text"/>
+      </div>
+      <div class="flex flex-col">
+       <label class="mb-2 text-gray-300 font-semibold" for="email">
+        Email Address
+       </label>
+       <input class="rounded-md bg-gray-800 border border-gray-600 text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-600" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+      </div>
+      <div class="flex flex-col">
+       <label class="mb-2 text-gray-300 font-semibold" for="phone">
+        Phone Number
+       </label>
+       <input class="rounded-md bg-gray-800 border border-gray-600 text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-600" id="phone" name="phone" placeholder="+1 234 567 8900" type="tel"/>
+      </div>
+      <div class="flex flex-col">
+       <label class="mb-2 text-gray-300 font-semibold" for="date">
+        Preferred Date
+       </label>
+       <input class="rounded-md bg-gray-800 border border-gray-600 text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-600" id="date" name="date" required="" type="date"/>
+      </div>
+      <div class="flex flex-col md:col-span-2">
+       <label class="mb-2 text-gray-300 font-semibold" for="type">
+        Booking Type
+       </label>
+       <select class="rounded-md bg-gray-800 border border-gray-600 text-white px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-600" id="type" name="type" required="">
+        <option disabled="" selected="" value="">
+         Select booking type
+        </option>
+        <option value="editorial">
+         Editorial Shoot
+        </option>
+        <option value="runway">
+         Runway Show
+        </option>
+        <option value="commercial">
+         Commercial Campaign
+        </option>
+        <option value="event">
+         Event Appearance
+        </option>
+        <option value="other">
+         Other
+        </option>
+       </select>
+      </div>
+      <div class="flex flex-col md:col-span-2">
+       <label class="mb-2 text-gray-300 font-semibold" for="details">
+        Additional Details
+       </label>
+       <textarea class="rounded-md bg-gray-800 border border-gray-600 text-white px-4 py-3 resize-none focus:outline-none focus:ring-2 focus:ring-amber-600" id="details" name="details" placeholder="Please provide any additional information or requests" rows="4"></textarea>
+      </div>
+     </div>
+     <button class="w-full md:w-auto bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-md px-8 py-3 transition-colors focus:outline-none focus:ring-4 focus:ring-amber-500" type="submit">
+      Submit Booking Request
+     </button>
+    </form>
+   </section>
+  </main>
+  <footer class="bg-white text-gray-900 py-6 mt-auto shadow-inner">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-600">
+    <p>
+     © 2024 Elena Voss. All rights reserved.
+    </p>
+    <div class="flex space-x-6 mt-3 sm:mt-0">
+     <a aria-label="Instagram" class="hover:text-amber-600 transition-colors" href="https://www.instagram.com" rel="noopener" target="_blank">
+      <i class="fab fa-instagram fa-lg">
+      </i>
+     </a>
+     <a aria-label="Facebook" class="hover:text-amber-600 transition-colors" href="https://www.facebook.com" rel="noopener" target="_blank">
+      <i class="fab fa-facebook-f fa-lg">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-amber-600 transition-colors" href="https://www.twitter.com" rel="noopener" target="_blank">
+      <i class="fab fa-twitter fa-lg">
+      </i>
+     </a>
+     <a aria-label="Email" class="hover:text-amber-600 transition-colors" href="mailto:contact@elenavoss.com">
+      <i class="fas fa-envelope fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
